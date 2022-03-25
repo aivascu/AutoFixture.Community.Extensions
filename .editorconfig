@@ -1,0 +1,20 @@
+root = true
+
+[*]
+end_of_line = crlf
+insert_final_newline = true
+
+[*.{csproj}]
+indent_style = space
+indent_size = 2
+
+
+[*.cs]
+
+#use soft tabs (spaces) for indentation
+indent_style = space
+
+#Style - modifier options
+
+#prefer accessibility modifiers to be declared except for public interface members. This will currently not differ from always and will act as future proofing for if C# adds default interface methods.
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggestion
