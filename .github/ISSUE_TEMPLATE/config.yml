@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💡 New Idea
+    url: https://github.com/aivascu/AutoFixture.Community.Extensions/discussions/categories/ideas
+    about: Propose and discuss ideas and proposals
+  - name: 🤔 Question
+    url: https://github.com/aivascu/AutoFixture.Community.Extensions/discussions/categories/q-a
+    about: Ask a questions or seek help
+  - name: 📈 Show and Tell
+    url: https://github.com/aivascu/AutoFixture.Community.Extensions/discussions/categories/show-and-tell
+    about: Share something cool (e.g. snippets, success stories, etc.)

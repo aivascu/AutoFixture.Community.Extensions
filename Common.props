@@ -1,0 +1,35 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Andrei Ivascu</Authors>
+    <Copyright>Andrei Ivascu</Copyright>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>A library that integrates AutoFixture with Extensions.</Description>
+    <PackageTags>AutoFixture;Extensions;Unit Testing;Tests</PackageTags>
+    <PackageProjectUrl>https://github.com/aivascu/AutoFixture.Community.Extensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/aivascu/AutoFixture.Community.Extensions.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <PackageIcon>icon.png</PackageIcon>
+    <!-- <PackageReadmeFile>readme.md</PackageReadmeFile> -->
+
+    <!-- Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+    <!-- Embed source files that are not tracked by the source control manager in the PDB -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <!-- Set the CheckEolTargetFramework property to false to fix the NETSDK1138 warning -->
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- <SourceRoot Include="$(MSBuildThisFileDirectory)/"/> -->
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\readme.md" Pack="true" PackagePath="\" />
+    <None Include="..\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
