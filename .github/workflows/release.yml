@@ -45,8 +45,8 @@ jobs:
       - name: Run './build.cmd Cover Publish'
         run: ./build.cmd Cover Publish
         env:
-          GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           NuGetApiKey: ${{ secrets.NUGET_API_KEY }}
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
       - uses: actions/upload-artifact@v2
         with:
           name: testresults

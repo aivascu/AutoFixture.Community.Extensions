@@ -51,4 +51,4 @@ jobs:
       - name: Run './build.cmd Cover Pack'
         run: ./build.cmd Cover Pack
         env:
-          GitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
