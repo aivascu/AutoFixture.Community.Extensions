@@ -167,7 +167,6 @@ partial class Build : NukeBuild
         .Consumes(Pack)
         .OnlyWhenDynamic(() => IsServerBuild)
         .OnlyWhenDynamic(() => !NuGetApiKey.IsNullOrEmpty())
-        .OnlyWhenDynamic(() => GitRepository.IsOnMasterBranch() || GitRepository.IsOnReleaseBranch())
         .Requires(() => Configuration.Equals(Configuration.Release))
         .Executes(() =>
         {
